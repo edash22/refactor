@@ -1,3 +1,19 @@
+/**========================================================
+    RESPONSIVE CSS
+
+    Created: Feb. 12, 2015
+    Modified from provided Keyboard template
+
+    Browsers supported: IE8+, Chrome, Firefox
+
+    Known limitations:
+    - Navigation wraps at less than 313px wide
+========================================================**/
+
+/**========================================================
+    GENERAL 
+========================================================**/
+
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +22,27 @@ body {
     font-size: 14px;
     color: #5B5B5B;
 }
+
+#wrapper {
+    background: #FFFFFF url(../img/img05.jpg) repeat;
+}
+
+.container {
+    width: 95%;
+    margin: 0px auto;
+}
+
+/* clearfix from: http://css-tricks.com/snippets/css/clear-fix/ 
+   Good for IE8 and above */
+.clearfix: after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/**========================================================
+    TYPE
+========================================================**/
 
 h1, h2, h3 {
     margin: 0;
@@ -31,10 +68,7 @@ h3 {
 
 p, ul, ol {
     margin-top: 0;
-    line-height: 180%;
-}
-
-ul, ol {
+    line-height: 190%;
 }
 
 a {
@@ -44,67 +78,42 @@ a {
 a:hover {
 }
 
-#wrapper {
-    background: #FFFFFF url(../img/img05.jpg) repeat;
-}
-
-.container {
-    width: 80%;
-    margin: 0px auto;
-}
+/**========================================================
+    HEADER
+========================================================**/
 
 /* Main - HTML5 fix for IE8 */
 main {
     display: block;
 }
 
-
-/* Header */
-
 #header-wrapper {
     /* overflow: hidden;  */  /* Probably need to get rid of this*/
 }
 
 #header {
-    height: 150px;   /* Probably need to get rid of this - it is currently keeping headers below from creeping up*/
     margin: 0 auto;
-    padding: 0;
+    padding: 1rem 0 0 0;
 }
 
 /* Logo */
 
 #logo {
-    float: left;
-    margin: 0 0 2rem 0;
+    /* float: left; */
+    margin: 0;
     padding: 0;
     color: #FFFFFF;
 }
 
-#logo h1, #logo p {
-}
-
 #logo h1 {
-    line-height: 120px;
     letter-spacing: -2px;
-    font-size: 3.8em;
+    font-size: 2.0em;
+    text-align: center;
 }
 
 #logo h1 a {
     color: #1F1F1F;
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
-}
-
-#logo p {
-    margin: 0;
-    padding: 0px 0 0 0px;
-    letter-spacing: -1px;
-    font: normal 18px Georgia, "Times New Roman", Times, serif;
-    font-style: italic;
-    color: #8E8E8E;
-}
-
-#logo p a {
-    color: #8E8E8E;
 }
 
 #logo a {
@@ -117,35 +126,36 @@ main {
 /* Menu */
 
 #menu {
-    float: right;
-    height: 90px;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     padding: 0;
+    text-align: center;
 }
 
 #menu ul {
-    float: right;
     margin: 0;
-    padding: 20px 0px 0px 0px;
+    padding: 0;
     list-style: none;
     line-height: normal;
+    display: inline-table;
 }
 
 #menu li {
     float: left;
+    text-align: center;
+    display: inline;
 }
 
 #menu a {
     display: block;
-    line-height: 100px;
+    line-height: 3rem;
     margin-right: 1px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 10px;
     text-decoration: none;
     text-align: center;
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
     color: #1F1F1F;
     border: none;
@@ -160,15 +170,27 @@ main {
 #menu .current_page_item a {
 }
 
-/* Page */
+/* Banner */
+
+#banner {
+    margin: 0px auto;
+    width: 95%;
+    background: url(../img/img03.png) no-repeat left bottom;
+}
+
+#banner .banner-img img {
+    width: 100%;
+}
+
+/**========================================================
+    PAGE CONTENT
+========================================================**/
 
 #page {
-    width: 80%; 
+    width: 95%; 
     margin: 0 auto;
     padding: 30px 0px;
 }
-
-/* Content */
 
 #content {
     float: right;
@@ -315,7 +337,7 @@ main {
 
 #footer-content {
     overflow: hidden;
-    width: 80%;
+    width: 95%;
     margin: 0px auto;
     color: #D6E2F0;
 }
@@ -398,16 +420,10 @@ main {
     color: #5E5E5E;
 }
 
-#banner {
-    margin: 0px auto;
-    width: 80%;
-    background: url(../img/img03.png) no-repeat left bottom;
-}
 
-#banner .banner-img img {
-    width: 100%;
-}
 
+
+/**** THESE LOOK UNUSED  ****/
 
 .list-style1 {
     margin: 0px;
@@ -417,4 +433,64 @@ main {
 
 .list-style1 a {
     color: #7F7F7F;
+}
+
+/**========================================================
+    MEDIA QUERIES
+========================================================**/
+
+@media (min-width: 400px) {
+    #logo h1 {
+        font-size: 2.8em;
+    }
+
+    #menu {
+        margin: 0 auto 2rem auto;
+    }
+
+    #menu a {
+        line-height: 4rem;
+        padding: 0px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 800px) {
+    #logo h1 {
+        float: left;
+        font-size: 3.8em;
+        text-align: left;               /* IS THIS NECESSARY IF FLOAT LEFT ?? */
+    }
+
+    #menu {
+        float: right;
+        margin: 0 0 2rem 0;
+    }
+
+    #menu a {
+        line-height: 6rem;
+        padding: 0px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Above 350px wide, use a little more white space on the sides */
+@media (min-width: 350px) {
+    .container {
+        width: 90%;
+    }
+
+    #page {
+        width: 90%; 
+        padding: 30px 0px;
+    }
+
+    #footer-content {
+        width: 90%;
+    }
+
+    #banner {
+        width: 90%;
+    }
+
 }
