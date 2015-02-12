@@ -59,7 +59,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.8em;
+    font-size: 1.8em;
 }
 
 h3 {
@@ -87,10 +87,6 @@ main {
     display: block;
 }
 
-#header-wrapper {
-    /* overflow: hidden;  */  /* Probably need to get rid of this*/
-}
-
 #header {
     margin: 0 auto;
     padding: 1rem 0 0 0;
@@ -99,7 +95,6 @@ main {
 /* Logo */
 
 #logo {
-    /* float: left; */
     margin: 0;
     padding: 0;
     color: #FFFFFF;
@@ -189,22 +184,21 @@ main {
 #page {
     width: 95%; 
     margin: 0 auto;
-    padding: 30px 0px;
+    padding: 15px 0px;
 }
 
 #content {
-    float: right;
     padding: 0px 0px 0px 0px;
 }
 
 .post {
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border-bottom: 1px solid #E7EBED;
 }
 
 .post .title {
-    padding: 7px 0px 0px 0px;
+    padding: 0;
     letter-spacing: -1px;
 }
 
@@ -235,31 +229,24 @@ main {
 }
 
 .post .entry {
-    padding: 0px 0px 40px 0px;
-    text-align: justify;
+    padding: 0px 0px 20px 0px;
+    text-align: left;
 }
 
 .links {
-    padding-top: 20px;
-    margin-bottom: 30px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
 }
 
 .more {
-    display: block;
-    float: left;
-    width: 5.5rem; 
-    padding: 5px 5px;
     margin-right: 10px;
-    background: #222222;
-    color: #FFFFFF;
-    text-align: center;
-    text-decoration: none;
 }
 
-.comments {
+.comments, .more {
     display: block;
     float: left;
-    width: 5.5rem;
+    width: 5rem;
     padding: 5px 5px;
     background: #222222;
     color: #FFFFFF;
@@ -270,9 +257,8 @@ main {
 /* Sidebar */
 
 #sidebar {
-    float: left;
     margin: 0px;
-    padding: 30px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
 #sidebar ul {
@@ -313,7 +299,7 @@ main {
 
 #sidebar h2 {
     height: 38px;
-    padding: 0px 0px 30px 0px;
+    padding: 0px 0px 10px 0px;
     letter-spacing: -.5px;
     font-size: 1.8em;
     color: #222222;
@@ -359,7 +345,6 @@ main {
     font-size: 26px;
     color: #262626;
 }
-
 
 #footer-content #fbox1 {
     float: left;
@@ -420,25 +405,11 @@ main {
     color: #5E5E5E;
 }
 
-
-
-
-/**** THESE LOOK UNUSED  ****/
-
-.list-style1 {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
-
-.list-style1 a {
-    color: #7F7F7F;
-}
-
 /**========================================================
     MEDIA QUERIES
 ========================================================**/
 
+/* Above 400px use slightly larger fonts */
 @media (min-width: 400px) {
     #logo h1 {
         font-size: 2.8em;
@@ -453,13 +424,17 @@ main {
         padding: 0px 10px;
         font-size: 14px;
     }
+
+    h2 {
+        font-size: 2.4em;
+    }
 }
 
+/* Above 800px use larger fonts, additional spacing, justified posts */
 @media (min-width: 800px) {
     #logo h1 {
         float: left;
         font-size: 3.8em;
-        text-align: left;               /* IS THIS NECESSARY IF FLOAT LEFT ?? */
     }
 
     #menu {
@@ -472,6 +447,60 @@ main {
         padding: 0px 20px;
         font-size: 16px;
     }
+
+    h2 {
+        font-size: 2.8em;
+    }
+
+    #page { 
+        padding: 30px 0px;
+    }
+
+    #sidebar {
+        padding: 30px 0px 0px 0px;
+    }
+
+    #sidebar h2 {
+        padding: 0px 0px 30px 0px;
+    }
+
+    .post {
+        margin-bottom: 40px;
+    }
+
+    .post .entry {
+        padding: 0px 0px 40px 0px;
+        text-align: justify;
+    }
+
+    .post .title {
+        padding: 7px 0px 0px 0px;
+    }
+
+    .links {
+        padding-top: 20px;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    .comments, .more {
+        width: 5.5rem;
+    }
+
+}
+
+/* Above 850px wide, go to two columns for the page content */
+@media (min-width: 850px) {
+    #content {
+        float: right;
+        width: 66%;
+    }
+
+    #sidebar {
+        float: left;
+        width: 28%;
+    }
+
 }
 
 /* Above 350px wide, use a little more white space on the sides */
@@ -482,7 +511,6 @@ main {
 
     #page {
         width: 90%; 
-        padding: 30px 0px;
     }
 
     #footer-content {
