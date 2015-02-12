@@ -49,11 +49,11 @@ a:hover {
 }
 
 .container {
-    width: 1000px;
+    width: 80%;
     margin: 0px auto;
 }
 
-/* Main - fix for IE8 */
+/* Main - HTML5 fix for IE8 */
 main {
     display: block;
 }
@@ -62,22 +62,20 @@ main {
 /* Header */
 
 #header-wrapper {
-    overflow: hidden;
+    /* overflow: hidden;  */  /* Probably need to get rid of this*/
 }
 
 #header {
-    width: 1000px;
-    height: 150px;
+    height: 150px;   /* Probably need to get rid of this - it is currently keeping headers below from creeping up*/
     margin: 0 auto;
-    padding: 0px 0px;
+    padding: 0;
 }
 
 /* Logo */
 
 #logo {
     float: left;
-    width: 300px;
-    margin: 0;
+    margin: 0 0 2rem 0;
     padding: 0;
     color: #FFFFFF;
 }
@@ -116,58 +114,10 @@ main {
     color: #000000;
 }
 
-/* Splash */
-
-#splash {
-    width: 960px;
-    height: 300px;
-    margin: 0px auto;
-}
-
-/* Search */
-
-#search {
-    float: right;
-    width: 280px;
-    height: 60px;
-    padding: 20px 0px 0px 0px;
-}
-
-#search form {
-    height: 41px;
-    margin: 0;
-    padding: 10px 0 0 20px;
-}
-
-#search fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-#search-text {
-    width: 170px;
-    padding: 6px 5px 2px 5px;
-    border: 1px solid #E7EBED;
-    background: #FFFFFF;
-    text-transform: lowercase;
-    font: normal 11px Arial, Helvetica, sans-serif;
-    color: #5D781D;
-}
-
-#search-submit {
-    width: 50px;
-    height: 22px;
-    border: none;
-    background: #B9B9B9;
-    color: #000000;
-}
-
 /* Menu */
 
 #menu {
     float: right;
-    width: 500px;
     height: 90px;
     margin: 0 auto;
     padding: 0;
@@ -213,7 +163,7 @@ main {
 /* Page */
 
 #page {
-    width: 1000px;
+    width: 80%; 
     margin: 0 auto;
     padding: 30px 0px;
 }
@@ -222,7 +172,6 @@ main {
 
 #content {
     float: right;
-    width: 660px;
     padding: 0px 0px 0px 0px;
 }
 
@@ -276,7 +225,7 @@ main {
 .more {
     display: block;
     float: left;
-    width: 88px;
+    width: 5.5rem; 
     padding: 5px 5px;
     margin-right: 10px;
     background: #222222;
@@ -288,7 +237,7 @@ main {
 .comments {
     display: block;
     float: left;
-    width: 88px;
+    width: 5.5rem;
     padding: 5px 5px;
     background: #222222;
     color: #FFFFFF;
@@ -300,7 +249,6 @@ main {
 
 #sidebar {
     float: left;
-    width: 270px;
     margin: 0px;
     padding: 30px 0px 0px 0px;
 }
@@ -363,32 +311,11 @@ main {
     text-decoration: underline;
 }
 
-/* Calendar */
-
-#calendar {
-}
-
-#calendar_wrap {
-    padding: 20px;
-}
-
-#calendar table {
-    width: 100%;
-}
-
-#calendar tbody td {
-    text-align: center;
-}
-
-#calendar #next {
-    text-align: right;
-}
-
 /* Three Column Footer Content */
 
 #footer-content {
     overflow: hidden;
-    width: 1000px;
+    width: 80%;
     margin: 0px auto;
     color: #D6E2F0;
 }
@@ -414,18 +341,18 @@ main {
 
 #footer-content #fbox1 {
     float: left;
-    width: 300px;
+    width: 30%;
     margin-right: 50px;
 }
 
 #footer-content #fbox2 {
     float: left;
-    width: 300px;
+    width: 30%;
 }
 
 #footer-content #fbox3 {
     float: right;
-    width: 300px;
+    width: 30%;
 }
 
 #footer-content a {
@@ -433,18 +360,18 @@ main {
 
 #column1 {
     float: left;
-    width: 290px;
+    width: 29%;
     margin-right: 30px;
 }
 
 #column2 {
     float: left;
-    width: 280px;
+    width: 28%;
 }
 
 #column3 {
     float: right;
-    width: 260px;
+    width: 26%;
 }
 
 /* Footer */
@@ -471,49 +398,14 @@ main {
     color: #5E5E5E;
 }
 
-#marketing {
-    overflow: hidden;
-    margin-bottom: 30px;
-    padding: 20px 0px 10px 0px;
-    border-top: 1px solid #E7EBED;
-    border-bottom: 1px solid #E7EBED;
-}
-
-#marketing .text1 {
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    letter-spacing: -2px;
-    text-transform: lowercase;
-    font-size: 34px;
-    color: #345E9B;
-}
-
-#marketing .text2 {
-    float: right;
-}
-
-#marketing .text2 a {
-    display: block;
-    width: 252px;
-    height: 38px;
-    padding: 15px 0px 0px 0px;
-    background: url(../img/img07.jpg) no-repeat left top;
-    letter-spacing: -2px;
-    text-align: center;
-    text-transform: lowercase;
-    font-size: 30px;
-    color: #FFFFFF;
-}
-
 #banner {
     margin: 0px auto;
-    width: 1000px;
-    height: 340px;
+    width: 80%;
     background: url(../img/img03.png) no-repeat left bottom;
 }
 
-#banner .content {
+#banner .banner-img img {
+    width: 100%;
 }
 
 
