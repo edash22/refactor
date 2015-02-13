@@ -280,14 +280,6 @@ main {
     border-left: none;
 }
 
-#sidebar li li span {
-    display: block;
-    margin-top: -20px;
-    padding: 0;
-    font-size: 11px;
-    font-style: italic;
-}
-
 #sidebar li li a {
     padding: 0px 0px 0px 20px;
     background: url(../img/img04.jpg) no-repeat left 50%;
@@ -301,12 +293,6 @@ main {
     color: #222222;
 }
 
-#sidebar p {
-    margin: 0 0px;
-    padding: 0px 30px 20px 30px;
-    text-align: justify;
-}
-
 #sidebar a {
     border: none;
 }
@@ -318,70 +304,6 @@ main {
 /**========================================================
     FOOTER
 ========================================================**/
-
-/* Three Column Footer Content */
-
-#footer-content {
-    overflow: hidden;
-    width: 95%;
-    margin: 0px auto;
-    color: #D6E2F0;
-}
-
-#footer-content a {
-    color: #92A9B6;
-}
-
-#footer-bg {
-    overflow: hidden;
-    padding: 30px 0px;
-    background: #E8E8E8;
-}
-
-#footer-content h2 {
-    margin: 0px;
-    padding: 0px 0px 20px 0px;
-    letter-spacing: -1px;
-    font-size: 26px;
-    color: #262626;
-}
-
-#footer-content #fbox1 {
-    float: left;
-    width: 30%;
-    margin-right: 50px;
-}
-
-#footer-content #fbox2 {
-    float: left;
-    width: 30%;
-}
-
-#footer-content #fbox3 {
-    float: right;
-    width: 30%;
-}
-
-#footer-content a {
-}
-
-#column1 {
-    float: left;
-    width: 29%;
-    margin-right: 30px;
-}
-
-#column2 {
-    float: left;
-    width: 28%;
-}
-
-#column3 {
-    float: right;
-    width: 26%;
-}
-
-/* Footer */
 
 #footer {
     height: 3rem;
@@ -398,10 +320,6 @@ main {
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
-    color: #5E5E5E;
-}
-
-#footer a {
     color: #5E5E5E;
 }
 
@@ -521,10 +439,6 @@ main {
 
     #page {
         width: 90%; 
-    }
-
-    #footer-content {
-        width: 90%;
     }
 
     #banner {
