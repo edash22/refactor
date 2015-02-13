@@ -81,9 +81,6 @@ a {
     color: #5E5E5E;
 }
 
-a:hover {
-}
-
 /**========================================================
     3 - HEADER
 ========================================================**/
@@ -163,9 +160,6 @@ a:hover {
     color: #FFFFFF;
 }
 
-#menu .current_page_item a {
-}
-
 /* Banner */
 
 #banner {
@@ -229,9 +223,6 @@ main {
 
 .post .meta .posted {
     float: right;
-}
-
-.post .meta a {
 }
 
 .post .entry {
