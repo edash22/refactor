@@ -1,4 +1,8 @@
 URL:
-
+    http://ellendash.com/mmc6278/respRefactor/
 Resources:
--
+    http://www.vandelaydesign.com/turn-any-site-into-a-responsive-site/ 
+    http://www.w3.org/TR/2011/WD-html5-author-20110809/the-link-element.html 
+    http://css-tricks.com/snippets/css/clear-fix/ 
+    http://stackoverflow.com/questions/544207/can-you-help-me-center-a-ul-element-with-css 
+    http://www.labnol.org/internet/remove-unused-css/28635/ 
