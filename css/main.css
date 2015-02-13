@@ -384,9 +384,9 @@ main {
 /* Footer */
 
 #footer {
-    height: 140px;
+    height: 3rem;
     margin: 0 auto;
-    padding: 50px 0 15px 0;
+    padding: 15px 0 15px 0;
     font-family: 'Abel', sans-serif;
 }
 
@@ -409,7 +409,7 @@ main {
     MEDIA QUERIES
 ========================================================**/
 
-/* Above 400px use slightly larger fonts */
+/* Above 400px use slightly larger fonts and footer */
 @media (min-width: 400px) {
     #logo h1 {
         font-size: 2.8em;
@@ -428,9 +428,14 @@ main {
     h2 {
         font-size: 2.4em;
     }
+
+    #footer {
+        height: 6rem;
+        padding: 25px 0 15px 0;
+    }
 }
 
-/* Above 800px use larger fonts, additional spacing, justified posts */
+/* Above 800px use larger fonts, additional spacing, justified posts, fat footer */
 @media (min-width: 800px) {
     #logo h1 {
         float: left;
@@ -485,6 +490,11 @@ main {
 
     .comments, .more {
         width: 5.5rem;
+    }
+
+    #footer {
+        height: 9rem;
+        padding: 50px 0 15px 0;
     }
 
 }
