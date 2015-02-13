@@ -4,14 +4,24 @@
     Created: Feb. 12, 2015
     Modified from provided Keyboard template
 
-    Browsers supported: IE8+, Chrome, Firefox
+    Browsers supported: IE8+, Chrome35+, Firefox34+
 
     Known limitations:
     - Navigation wraps at less than 313px wide
+
+    CONTENTS
+        1 - GENERAL 
+        2 - TYPE
+        3 - HEADER
+        4 - MAIN PAGE - POSTS
+        5 - SIDEBAR
+        6 - FOOTER
+        7 - MEDIA QUERIES
+
 ========================================================**/
 
 /**========================================================
-    GENERAL 
+    1 - GENERAL 
 ========================================================**/
 
 body {
@@ -41,7 +51,7 @@ body {
 }
 
 /**========================================================
-    TYPE
+    2 - TYPE
 ========================================================**/
 
 h1, h2 {
@@ -75,13 +85,8 @@ a:hover {
 }
 
 /**========================================================
-    HEADER
+    3 - HEADER
 ========================================================**/
-
-/* Main - HTML5 fix for IE8 */
-main {
-    display: block;
-}
 
 #header {
     margin: 0 auto;
@@ -174,8 +179,13 @@ main {
 }
 
 /**========================================================
-    PAGE CONTENT
+    4 - MAIN PAGE - POSTS
 ========================================================**/
+
+/* Main - HTML5 fix for IE8 */
+main {
+    display: block;
+}
 
 #page {
     width: 95%; 
@@ -250,7 +260,9 @@ main {
     text-decoration: none;
 }
 
-/* Sidebar */
+/**========================================================
+    5 - SIDEBAR
+========================================================**/
 
 #sidebar {
     margin: 0px;
@@ -302,7 +314,7 @@ main {
 }
 
 /**========================================================
-    FOOTER
+    6 - FOOTER
 ========================================================**/
 
 #footer {
@@ -324,7 +336,7 @@ main {
 }
 
 /**========================================================
-    MEDIA QUERIES
+    7 - MEDIA QUERIES
 ========================================================**/
 
 /* Above 400px use slightly larger fonts and footer */
